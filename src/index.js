@@ -24,7 +24,7 @@ const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }
-mongoose.connect("mongodb://localhost:27017/covid19", options)
+// mongoose.connect("mongodb://localhost:27017/covid19", options)
 // mongoose.connect("cluster0-shard-00-00.yyndl.mongodb.net:27017", options)
 
 const country = [
