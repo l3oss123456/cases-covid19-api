@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/config/index.js"],"names":["PORT","process","env"],"mappings":";;;;;;;AAAA;;eAEe;AACbA,EAAAA,IAAI,EAAEC,OAAO,CAACC,GAAR,CAAYF,IAAZ,IAAoB;AADb,C","sourcesContent":["import \"dotenv/config\"\r\n\r\nexport default {\r\n  PORT: process.env.PORT || 8000,\r\n}\r\n"],"file":"index.js"}
