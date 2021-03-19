@@ -41,23 +41,23 @@ const country = [
 ]
 let lastdays = 1
 
-// setInterval(async () => {
-//   const resp = await list_covid19_all_country(country, lastdays)
-//   broadcastData(resp)
-//   lastdays = lastdays + 1
-//   if (lastdays > 30) {
-//     lastdays = 1
-//   }
-// }, 3000)
-
-test()
-async function test() {
+setInterval(async () => {
   const resp = await list_covid19_all_country(country, lastdays)
   broadcastData(resp)
   lastdays = lastdays + 1
   if (lastdays > 30) {
     lastdays = 1
   }
-}
+}, 3000)
+
+// test()
+// async function test() {
+//   const resp = await list_covid19_all_country(country, lastdays)
+//   broadcastData(resp)
+//   lastdays = lastdays + 1
+//   if (lastdays > 30) {
+//     lastdays = 1
+//   }
+// }
 
 export default server
