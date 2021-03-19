@@ -13,8 +13,8 @@ const app = new Koa()
 app.use(bodyParser())
 app.use(cors())
 
-const apiRouter = load(path.resolve(__dirname, "controllers"), ".controller.js")
-app.use(apiRouter.routes())
+// const apiRouter = load(path.resolve(__dirname, "controllers"), ".controller.js")
+// app.use(apiRouter.routes())
 
 const server = app.listen(config.PORT, () => {
   console.log(`Server is running on port : ${config.PORT}`)
